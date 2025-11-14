@@ -380,7 +380,7 @@ Cell* removeCell(int l)
 {
 	int j=rand()%l--;
 	Cell* c=&cells[ind[j]];
-	memmove(&ind[j], &ind[j+1], (l-j)*sizeof(int));
+	ind[j]=ind[l];
 	return c;
 }
 
